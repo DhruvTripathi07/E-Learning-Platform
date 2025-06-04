@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" class="js-color-style" href="CSS/colors/colors-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- main wrapper start -->
+<div class="main-wrapper">
+
+    <!-- header-start  -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main d-flex justify-content-between align-items-center">
+                <div class="header-logo">
+                    <a href="index.html">s<span>ee</span>kho</a>
+                </div>
+                <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+                    <span></span>
+                </button>
+                <div class="header-backdrop"></div>
+                <nav class="header-menu js-header-menu">
+                    <button type="button" class="header-close-btn js-header-menu-toggler">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" class="js-toggle-sub-menu">Courses <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="sub-menu js-sub-menu">
+                                <li class="sub-menu-item"><a href="courses.html">Courses</a></li>
+                                <li class="sub-menu-item"><a href="course-details.html">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" class="js-toggle-sub-menu">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="sub-menu js-sub-menu">
+                                <li class="sub-menu-item"><a href="log-in.html">Log In</a></li>
+                                <li class="sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+     <!-- header end -->
+
+     <!-- breadcrumb start -->
+     <div class="breadcrumb-nav">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Course Details</li>
+                </ol>
+              </nav>
+        </div>
+     </div>
+    <!-- breadcrumb end -->
+
+    <!-- Course Details section starr-->
+     <section class="course-details section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- course header starts -->
+                     <div class="course-header box">
+                        <h2>JavaScript for beginners</h2>
+                        <div class="rating">
+                            <span class="average-rating">(4.0)</span>
+                            <span class="average-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span class="reviews">(310 Reviews)</span>
+                        </div>
+                        <ul>
+                            <li> Enrolled Students :<span>2200</span></li>
+                            <li> Course created by :<span><a href="#">Matthew Sams</a></span></li>
+                            <li> Last updated :<span>10/10/2024</span></li>
+                            <li> Language :<span>English</span></li>
+                        </ul>
+                     </div>
+                    <!-- course header end -->
+                    
+                    <!-- course-tabs start  -->
+                    <nav class="course-tabs">
+                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="course-curriculum-tab" data-bs-toggle="tab" data-bs-target="#course-curriculum" type="button" role="tab" aria-controls="course-curriculum" aria-selected="true">Curriculum</button>
+                          <button class="nav-link" id="course-description-tab" data-bs-toggle="tab" data-bs-target="#course-description" type="button" role="tab" aria-controls="course-description" aria-selected="false">Description</button>
+                          <button class="nav-link" id="course-instructor-tab" data-bs-toggle="tab" data-bs-target="#course-instructor" type="button" role="tab" aria-controls="course-instructor" aria-selected="false">Instructor</button>
+                          </div>
+                      </nav>
+                    <!-- course tabs ends -->
+
+                    <!-- tab panes start -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- Course curriculum starts -->
+                        <div class="tab-pane fade show active" id="course-curriculum" role="tabpanel" aria-labelledby="course-curriculum-tab" tabindex="0">
+                            <div class="course-curriculum box">
+                                <h3 class="mb-4">Course Curriculum</h3>
+                                <!-- accoridian start -->
+                                <div class="accordion" id="accordion">
+                                    <!-- accordian item 1 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                            Language Basics <span>2 lessons | 20 min</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                                          <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Lexical Structures and Values
+                                                    <span> 10:00</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Variables and Types
+                                                    <span> 10:00</span>
+                                                </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!-- accordian item 2 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                            Types <span>2 lessons | 20 min</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                          <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Strings and Booleans
+                                                    <span> 10:00</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Null and Undefined
+                                                    <span> 10:00</span>
+                                                </li>                              
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!-- accordian item 3 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                            Control Structure <span> 3 lessons | 30 mins</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                          <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Conditional Statements
+                                                    <span> 10:00</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Switch Cases
+                                                    <span> 10:00</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Loops
+                                                    <span> 10:00</span>
+                                                </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!-- accordian item 4 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                            Functions <span> 4 lessons | 40 mins</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                          <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Arrow Function
+                                                    <span> 10:00</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Parameters
+                                                    <span> 10:00</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Return Values
+                                                    <span> 10:00</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa-solid fa-circle-play"></i>
+                                                    Recursion
+                                                    <span> 10:00</span>
+                                                </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordian ends -->
+                            </div>
+                        </div>
+                        <!-- Course curriculum ends -->
+                         
+                        <!-- Course description starts -->
+                        <div class="tab-pane fade" id="course-description" role="tabpanel" aria-labelledby="course-description-tab" tabindex="0">
+                            <div class="course-description box">
+                                <h3 class="mb-4">Description</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sapiente perspiciatis sed ratione illum perferendis suscipit, ullam odit inventore atque laudantium optio at nobis cum voluptatum officiis vero possimus ut?</p>
+                                <h4>For who is this course designed?</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, expedita dolorem molestias voluptates quas quasi nemo quia reprehenderit veritatis deleniti a esse nisi officia qui porro repudiandae quos, asperiores quaerat.</p>
+                                <h4>Why you should take this course?</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore amet est voluptate ad magnam, quasi eum distinctio quod ullam ipsum?</p>
+                            </div>
+                        </div>
+                        <!-- Course description ends -->
+                        
+                        <!-- Course instructor starts -->
+                        <div class="tab-pane fade" id="course-instructor" role="tabpanel" aria-labelledby="course-instructor-tab" tabindex="0">
+                            <div class="course-instructor box">
+                                <h3 class="mb-3">Course Instructor</h3>
+                                    <div class="instructor-details">
+                                        <div class="details-wrap d-flex align-items-center flex-wrap">
+                                            <div class="left-box me-4">
+                                                <img src="img/instructor/1.png" class="rounded-circle" alt="">
+                                            </div>
+                                            <div class="right-box">
+                                                <h4>Matthew Sams <span>(Web Developer)</span></h4>
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa-solid fa-star"></i>
+                                                       4.5 rating 
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-circle-play"></i>
+                                                        10 Courses 
+                                                     </li>
+                                                     <li>
+                                                        <i class="fa-solid fa-certificate"></i>
+                                                        3000 reviews
+                                                     </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="text"></div>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt temporibus culpa voluptatum animi, debitis harum odio a nulla dolore eligendi voluptas veniam, inventore omnis consectetur! At illum, deserunt architecto voluptatem vel laborum nostrum corrupti, quasi voluptatibus ex dignissimos excepturi nesciunt.</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- Course instructor ends -->
+                        
+                      </div>
+                    <!-- tab panes ends  -->
+                </div>
+                <div class="col-lg-4">
+                    <!-- course sidebar start -->
+                     <div class="course-sidebar box">
+                        <div class="img-box position-relative" data-bs-toggle="modal" data-bs-target="#video-modal">
+                            <img src="img/courses/web-development/3.jpg" class="w-100" alt="">
+                            <div class="play-icon">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <p class="text-center"> Course Preview</p>
+                        </div>
+                        <div class="price d-flex align-items-center mb-3">
+                            <span class="price-old">₹5999/-</span>
+                            <span class="price-new">₹3999/-</span>
+                        </div>
+                        <h3 class="mb-3">Course Features</h3>
+                        <ul class="features-list">
+                            <li>Total 11 lessons</li>
+                            <li>Interactive Sessions</li>
+                            <li>Learning with Projects </li>
+                            <li>Other features</li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-theme btn-block">Enroll Now</button>
+                        </div>
+                     </div>
+                    <!-- course sidebar ends -->
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Course Details section ends -->
+    
+     <!-- footer start -->
+     <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-item">
+                            <h3 class="footer-logo">s<span>ee</span>kho</h3>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">What we offer</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Certificates</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-item">
+                            <h3>Learning</h3>
+                            <ul>
+                                <li><a href="#">Get the app</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-item">
+                            <h3>More</h3>
+                            <ul>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Become a Course Creator</a></li>
+                                <li><a href="#">Training Webinars</a></li>
+                                <li><a href="#">Free personality test</a></li>
+                                <li><a href="#">Help and Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-item">
+                            <h3>Get in touch</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook social-icon"></i>Facebook</a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter social-icon"></i>Twitter</a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram social-icon"></i>Instagram</a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin social-icon"></i>LinkedIn</a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube social-icon"></i>YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="m-0 py-4 text-center">Copyright &copy;2025 Dhruv Tripathi</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+    
+
+</div>
+<!-- main wrapper end -->
+
+<!-- Course Preview modal start -->
+<div class="modal fade video-modal js-course-preview-modal" id="video-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+            <div class="ratio ratio-16x9">
+                <video controls class="js-course-preview-video">
+                    <source src="video/course-preview.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Course Preview modal end -->
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/main.js"></script>
+</body>
+</html>
