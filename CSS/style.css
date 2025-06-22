@@ -250,7 +250,10 @@ h3 {
 select.form-control:focus option {
     background-color: var(--select-box-bg-color);
 }
-
+textarea.form-control {
+    height: 120px;
+    resize: none;
+}
 /*--------------------------------------------------- 
 13. =video model 
 ------------------------------------------------------*/
@@ -831,3 +834,27 @@ select.form-control:focus option {
 /* -----------------------------------------------------------
 27. =contact section 
 --------------------------------------------------------------*/
+.contact-item {
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 40px;
+}
+.contact-item .icon-box {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    color: var(--WHITE);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.contact-item .icon-box:hover {
+    transform: scale(1.1);
+    background-color: var(--button-hover-color);
+}
